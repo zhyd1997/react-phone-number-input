@@ -9,6 +9,7 @@
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "dependencies": {
     "@workspace/ui": "workspace:*",
     "lucide-react": "^0.475.0",

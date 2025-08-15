@@ -1,9 +1,15 @@
+import type { FC } from "react"
 import { Combobox } from "@/components/Combobox"
+import type { ComboboxProps } from "@/components/Combobox"
 
-export const CountrySelect = () => {
+export type CountrySelectProps = ComboboxProps & {}
+
+export const CountrySelect: FC<CountrySelectProps> = (props) => {
+  const { ...restProps } = props
+
   return (
     <div>
-      <Combobox />
+      <Combobox {...restProps} />
     </div>
   )
 }
